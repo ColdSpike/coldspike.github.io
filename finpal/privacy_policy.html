@@ -1,43 +1,37 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Privacy Policy</title>
-</head>
-<body>
-   <h1 id="privacy-policy-for-finpal">Privacy Policy for FinPal</h1>
-<p><strong>Last updated:</strong> December 29, 2025</p>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>FinPal Privacy Policy</title><style>body{max-width:800px;margin:40px auto;padding:0 20px;font:17px/1.6 system-ui,sans-serif;color:#202632}h1,h2,h3{line-height:1.25}</style></head><body>
+<h1>Privacy Policy for FinPal</h1>
+<p><strong>Last updated:</strong> October 18, 2026</p>
 <p>This Privacy Policy describes how FinPal (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) collects, uses, and discloses your information when you use our mobile application (&quot;App&quot;).</p>
-<h2 id="1-information-we-collect">1. Information We Collect</h2>
-<h3 id="a-sms-data-financial-transactions-">A. SMS Data (Financial Transactions)</h3>
+<h2>1. Information We Collect</h2>
+<h3>A. SMS Data (Financial Transactions)</h3>
 <p>FinPal requests access to your SMS messages solely for the purpose of automatically tracking your income and expenses.</p>
-<ul>
-<li><strong>What we access:</strong> We scan your SMS inbox for transaction-related messages (e.g., from banks, credit cards, or mobile wallets).</li>
-<li><strong>How it is processed:</strong> All SMS processing happens <strong>locally on your device</strong>. We do <strong>not</strong> upload your raw SMS messages to any external server.</li>
-<li><strong>AI Processing:</strong> If you enable AI features (powered by Google Gemini), strictly anonymized transaction text may be processed to categorize expenses. No personally identifiable information (PII) is shared.</li>
-</ul>
-<h3 id="b-personal-information">B. Personal Information</h3>
-<ul>
-<li><strong>Account Info:</strong> When you sign in with Google, we collect your email address and display name to create your account and sync your premium status.</li>
-<li><strong>Financial Data:</strong> Your transaction history, budget, and categories are stored locally on your device.</li>
-</ul>
-<h3 id="c-device-information">C. Device Information</h3>
-<p>We may collect information about your mobile device, including model, operating system version, and unique device identifiers (for crash reporting and purchase verification).</p>
-<h2 id="2-how-we-use-your-information">2. How We Use Your Information</h2>
+<p><strong>What we access:</strong> We scan your SMS inbox for transaction-related messages (e.g., from banks, credit cards, or mobile wallets).</p>
+<p><strong>How it is processed:</strong> SMS processing uses the on-device parser by default.</p>
+<p><strong>Optional AI Processing:</strong> Users with active Premium access, including the 30-day trial, may explicitly enable cloud AI parsing. When enabled, selected transaction messages are masked and sent with the message timestamp and the names of available categories and financial accounts to FinPal&#x27;s Google-hosted processing service, which uses Google Gemini. Masking reduces exposure but does not guarantee that all identifying details are removed. Turning this setting off stops future cloud parsing. Cloud AI access stops when the trial expires unless lifetime Premium is purchased.</p>
+<h3>B. Personal Information</h3>
+<p><strong>Account Info:</strong> When you sign in with Google or email and password, Firebase Authentication processes your sign-in information. We use your account identifier, email address and available display name to manage your account and Premium status.</p>
+<p><strong>Trial Eligibility:</strong> We store server-generated trial start and end timestamps and whether the one-time trial was claimed for your authenticated account.</p>
+<p><strong>Financial Data:</strong> Your transaction history, budget, and categories are stored locally on your device.</p>
+<h3>C. Device Information</h3>
+<p>Google Play and Firebase may process device and account information needed for authentication, purchases, and service security.</p>
+<h2>2. How We Use Your Information</h2>
 <p>We use the information we collect to:</p>
-<ol>
-<li><strong>Provide Features:</strong> Automatically generate transaction records from your bank SMS.</li>
-<li><strong>Manage Accounts:</strong> Verify your identity and sync your Premium membership across devices.</li>
-<li><strong>Improve App:</strong> Analyze crash logs (via Firebase Crashlytics) to fix bugs and improve performance.</li>
-</ol>
-<h2 id="3-third-party-services">3. Third-Party Services</h2>
+<p>1.  <strong>Provide Features:</strong> Automatically generate transaction records from your bank SMS.</p>
+<p>2.  <strong>Manage Accounts:</strong> Verify your identity, enforce one trial per account, and sync your Premium access across devices.</p>
+<p>3.  <strong>Protect Services:</strong> Authenticate requests and prevent abuse of optional cloud services.</p>
+<h2>3. Third-Party Services</h2>
 <p>We use the following third-party services, which may collect information used to identify you:</p>
-<ul>
-<li><strong>Google Sign-In:</strong> For authentication.</li>
-<li><strong>Google Play Services:</strong> For In-App Purchases and license verification.</li>
-<li><strong>Firebase (Google):</strong> For authentication, database, and crash reporting.</li>
-</ul>
-<h2 id="4-contact-us">4. Contact Us</h2>
+<p><strong>Google Sign-In:</strong> For authentication.</p>
+<p><strong>Google Play Services:</strong> For In-App Purchases and license verification.</p>
+<p><strong>Firebase (Google):</strong> For authentication and premium membership records.</p>
+<p><strong>Google Gemini through Vertex AI:</strong> For optional cloud SMS parsing after explicit consent.</p>
+<h2>4. Your Controls, Retention and Deletion</h2>
+<p><strong>SMS and cloud processing:</strong> You can revoke SMS permission in Android settings. You can disable Cloud AI parsing in FinPal Settings; this stops future cloud parsing. Without SMS permission, automatic SMS tracking and inbox imports are unavailable, but manual entry remains available.</p>
+<p><strong>Local records:</strong> Transactions, budgets, accounts, categories and attached receipts remain on your device unless you choose to export or back them up. Manually deleted transactions remain in the local Recycle Bin for up to 30 days; active Premium or trial access is required to restore them. Expired items are removed when FinPal next performs its cleanup. Wipe All Data permanently clears the app&#x27;s local records. Copies you exported or backed up must be deleted separately.</p>
+<p><strong>Account deletion:</strong> Signed-in users can choose Settings → Delete Account. After identity verification, this deletes the Firebase sign-in account and cloud profile. It does not delete local financial records; use Wipe All Data separately if desired. You can also request account deletion by contacting the email below.</p>
+<p><strong>Service records:</strong> Server-side entitlement, purchase-verification and trial-eligibility records are stored separately from the cloud profile. These records can remain after account deletion to verify purchases and prevent repeated free trials. Trial eligibility uses a one-way hash of a provider identifier, verified email address or account identifier. Contact us with requests concerning these records.</p>
+<p><strong>Purchases:</strong> Google Play handles payments. FinPal uses purchase tokens and account identifiers to verify Premium ownership; FinPal does not receive your payment-card details.</p>
+<h2>5. Contact Us</h2>
 <p>If you have any questions about our Privacy Policy, do not hesitate to contact us at: <strong>makrandpawar96@gmail.com</strong></p>
-
-</body>
-</html>
+</body></html>
